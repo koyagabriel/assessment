@@ -77,7 +77,7 @@ def main():
 
     manager.set_worker(Robot())
     manager.manage()
-    # However, a robot can eat.....
+    # However, a robot can't eat.....
     manager.lunch_break()
 
 if __name__ == '__main__':

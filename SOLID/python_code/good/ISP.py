@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # In this implementation, we break `AbstractWorker` into two seperate abstract
-# classes, `Workable` and `Eatable`, then we can seperate normal worker from 
+# classes, `Workable` and `Eatable`, then we can seperate normal worker from
 # robot. As a result, we don't need to implement `eat` method in robot anymore.
 
 from abc import ABCMeta, abstractmethod
@@ -73,7 +73,7 @@ class Robot(Workable):
     def work(self):
         print "I'm a robot. I'm working...."
 
-    # No need for implementation of `eat` which is not neccessary for a `Robot`. 
+    # No need for implementation of `eat` which is not neccessary for a `Robot`.
 
 def main():
 
@@ -99,7 +99,6 @@ def main():
         break_manager.lunch_break()
     except:
         pass
-    
+
 if __name__ == '__main__':
     main()
-
