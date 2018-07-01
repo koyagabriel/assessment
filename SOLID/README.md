@@ -17,12 +17,17 @@
     - `I`: Interface Segregation Principle
         - ```When designing the interface of an object, we should limit to define what is strictly necessary, avoiding carrying around stuff that is not used. This is, in a nutshell, the Interface Segregation Principle, whose official version says: Clients should not be forced to depend on methods they do not use.```
             - [link](http://www.oodesign.com/interface-segregation-principle.html)
-            - [Wiki](https://en.wikipedia.org/wiki/Interface_segregation_principle) 
+            - [Wiki](https://en.wikipedia.org/wiki/Interface_segregation_principle)
     - `D`: Dependency Inversion Principle
         - ```The last SOLID principle concerns the dependence among the components of an application and states that: 1. High-level modules should not depend on low-level modules. Both should depend on abstractions. 2. Abstractions should not depend upon details. Details should depend on abstractions. ```
         - [link](http://www.oodesign.com/dependency-inversion-principle.html)
         - [Code Tutorials](http://code.tutsplus.com/tutorials/solid-part-4-the-dependency-inversion-principle--net-36872)
         - **Program to an interface, not an implementation.**
+
+### Advantages of SOLID Principles
+- Cleaner code.
+- Code smells are kept away.
+- Codebase that is maintainable and expandable.
 
 ## Running the Code
 

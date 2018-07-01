@@ -16,6 +16,7 @@ If Li = T, the search terminates successfully; return i.
 Increase i by 1.
 If i < n, go to step 2. Otherwise, the search terminates unsuccessfully.
 ```
+https://github.com/koyagabriel/assessment/blob/master/algorithms/linear%20search/basic_linear_search.py
 
 #### With a sentinel
 The basic algorithm above makes two comparisons per iteration: one to check if Li equals t, and the other to check if i still points to a valid index of the list. By adding an extra record Ln to the list (a sentinel value) that equals the target, the second comparison can be eliminated until the end of the search, making the algorithm faster. The search will reach the sentinel if the target is not contained within the list.
@@ -26,6 +27,7 @@ If Li = T, go to step 4.
 Increase i by 1 and go to step 2.
 If i < n, the search terminates successfully; return i. Else, the search terminates unsuccessfully.
 ```
+https://github.com/koyagabriel/assessment/blob/master/algorithms/linear%20search/linear_search_with_sentinel.py
 
 #### In an ordered table
 If the list is ordered such that L0 ≤ L1 ... ≤ Ln−1, the search can establish the absence of the target more quickly by concluding the search once Li exceeds the target. This variation requires a sentinel that is greater than the target.
@@ -36,6 +38,7 @@ If Li ≥ T, go to step 4.
 Increase i by 1 and go to step 2.
 If Li = T, the search terminates successfully; return i. Else, the search terminates unsuccessfully.
 ```
+https://github.com/koyagabriel/assessment/blob/master/algorithms/linear%20search/linear_search_on_ordered_list.py
 
 ## Binary search
 Binary search works on sorted arrays. Binary search begins by comparing the middle element of the array with the target value. If the target value matches the middle element, its position in the array is returned. If the target value is less than or greater than the middle element, the search continues in the lower or upper half of the array, respectively, eliminating the other half from consideration. <br /><br />
@@ -51,6 +54,7 @@ If Am < T, set L to m + 1 and go to step 2.
 If Am > T, set R to m − 1 and go to step 2.
 Now Am = T, the search is done; return m.
 ```
+https://github.com/koyagabriel/assessment/blob/master/algorithms/binary_search.py
 
 ## Dijkstra Algorithm
 Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. The algorithm exists in many variants; Dijkstra's original variant found the shortest path between two nodes, but a more common variant fixes a single node as the "source" node and finds shortest paths from the source to all other nodes in the graph, producing a shortest-path tree.<br /><br />

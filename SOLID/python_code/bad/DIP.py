@@ -27,9 +27,9 @@ class SuperWorker(object):
     def work(self):
         print "I work very hard!!!"
 
-# OK... now you can see what happend if we want the `Manager` to support `SuperWorker`.
+# OK... now you can see what happened if we want the `Manager` to support `SuperWorker`.
 #  1. The `set_worker` must be modified or it will not pass the type-checking.
-#  2. The `manage` method should be re-test, which means you may or may not have to 
+#  2. The `manage` method should be re-test, which means you may or may not have to
 #     rewrite the testing code.
 
 def main():

@@ -14,7 +14,6 @@ The number of edges connected to a vertex(node) in a graph is known as the degre
 ### Three ways to represent graphs in code are
 
 - Adjacency matrices (https://github.com/koyagabriel/assessment/blob/master/data_structure/graph-algorithms/adjacency_matrix.py)
-- Adjacency lists
 - Adjacency sets (https://github.com/koyagabriel/assessment/blob/master/data_structure/graph-algorithms/adjacency_set.py)
 
 ### They are two ways of traversing Graphs
@@ -35,7 +34,8 @@ In a binary tree each node can have at most 2 children, because each node can ha
 
 #### Binary Search Tree (https://github.com/koyagabriel/assessment/blob/master/data_structure/binary_search_tree.py)
 
-A binary search tree is a binary tree that is, every parent node must have at most 2 children. There is a specific rule for how the values associated with each node are arranged. BSTs are sorted so every value on the left of a particular node is smaller than it and every value on the right of a particular node is larger than it. Because BSTs have this structure we can do operations like search, insert and delete pretty quickly.
+A binary search tree is a binary tree that is, every parent node must have at most 2 children. There is a specific rule for how the values associated with each node are arranged. BSTs are sorted so every value on the left of a particular node is smaller than it and every value on the right of a particular node is larger than it. Because BSTs have this structure we can do operations like search, insert and delete pretty quickly. <br />
+It is used in many search applications where data is constantly entering/leaving, such as the map and set.
 
 #### B-Trees
 
@@ -43,7 +43,9 @@ A B-tree is a self-balancing tree data structure that keeps data sorted and allo
 
 #### Heaps
 
-A heap is a specific type of tree with some of its own additional rules. In a heap elements are arranged in increasing or decreasing order such that the root element is either the maximum or minimum value in a tree.
+A heap is a specific type of tree with some of its own additional rules. In a heap elements are arranged in increasing or decreasing order such that the root element is either the maximum or minimum value in a tree.<br />
+
+Heaps are used in implementing efficient priority-queues, which in turn are used for scheduling processes in many operating systems.
 
 ##### Types of heaps: Max heaps and Min heaps
 
