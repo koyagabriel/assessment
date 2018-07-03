@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+    mongodb:
+        image: mongo
+        container_name: mongo_db
+        ports:
+            - "8000:27017"
+
+    app:
+        build:
+            context: .
+        depends_on:
+            - mongodb
+        container_name: app
+        ports:
+            - "10000:5000"
+        links:
+            - mongodb
+        stdin_open: true
+        tty: true
