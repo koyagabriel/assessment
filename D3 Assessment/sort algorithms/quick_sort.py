@@ -128,14 +128,14 @@ class InplaceQuickSort(QuickSortAbstractClass):
         return self.sequence
 
 if __name__ == '__main__':
-	random_list: List = [2,6,7,1,10,3,3,5,9,8,4,4,5,6]
-	# Running Queue based Sequence quick sort
-	input_sequence: Queue = Queue()
-	for value in random_list:
-		input_sequence.put(value)
-	result: List = SequenceBasedQuickSort(input_sequence).run()
-	print(result)
+    random_list: List = [2,6,7,1,10,3,3,5,9,8,4,4,5,6]
+    # Running Queue based Sequence quick sort
+    input_sequence: Queue = Queue()
+    for value in random_list:
+        input_sequence.put(value)
+    result: List = SequenceBasedQuickSort(input_sequence).run()
+    print(result)
 
-	# Running Array based Sequence quick sort using inplace algorithm
-	output = InplaceQuickSort(random_list).run()
-	print(output)
+    # Running Array based Sequence quick sort using inplace algorithm
+    output = InplaceQuickSort(random_list).run()
+    print(output)

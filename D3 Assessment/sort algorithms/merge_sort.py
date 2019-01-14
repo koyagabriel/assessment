@@ -80,10 +80,10 @@ class QueueBasedMergeSort(MergeSortAbstractClass):
                 sequence.put(left_sequence.get())
             else:
                 sequence.put(right_sequence.get())
-            
+
         while not left_sequence.empty():
             sequence.put(left_sequence.get())
-        
+
         while not right_sequence.empty():
             sequence.put(right_sequence.get())
 
@@ -91,7 +91,7 @@ class QueueBasedMergeSort(MergeSortAbstractClass):
         size: int = sequence.qsize()
 
         if size < 2: return
-     
+
         left_sequence: Queue = Queue()
         right_sequence: Queue = Queue()
 
@@ -123,6 +123,6 @@ if __name__ == '__main__':
     input_sequence: Queue = Queue()
     for value in random_list:
         input_sequence.put(value)
-    
+
     result: List = QueueBasedMergeSort(input_sequence).run()
     print(result)

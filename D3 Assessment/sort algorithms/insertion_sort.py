@@ -21,7 +21,7 @@ class InsertionSort:
 
     def run(self):
         self._sort(self.sequence)
-        return self.sequence
+        return self.sequencex pycha
 
 if __name__ == '__main__':
     random_list: List = [2,6,7,1,10,3,3,5,9,8,4,4,5,6]
