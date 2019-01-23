@@ -24,6 +24,16 @@ class Rectangle(Shape):
     def area(self):
         return self.width * self.height
 
+class Triangle(Shape):
+
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    @property
+    def area(self):
+        return (self.width * self.height)/2
+
 class AreaCalculator(object):
 
     def __init__(self, shapes):
