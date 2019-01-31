@@ -9,7 +9,7 @@ class InsertionSort:
         if not(type(sequence) == list):
             raise TypeError(f'{sequence} should be a python list')
         self.sequence: List = sequence
-    
+
     def _sort(self, sequence: List):
         for index in range(1, len(sequence)):
             current_element: Any = sequence[index]
@@ -21,11 +21,11 @@ class InsertionSort:
 
     def run(self):
         self._sort(self.sequence)
-        return self.sequencex pycha
+        return self.sequence
 
 if __name__ == '__main__':
     random_list: List = [2,6,7,1,10,3,3,5,9,8,4,4,5,6]
 
-    # Running Array based Sequence merge sort using inplace algorithm
+    # Running Array based Sequence heap sort using inplace algorithm
     output: List = InsertionSort(random_list).run()
     print(output)
