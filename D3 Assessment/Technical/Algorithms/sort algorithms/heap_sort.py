@@ -10,10 +10,10 @@ class HeapSort:
             raise TypeError(f'{sequence} should be a python list')
         self.sequence: List = sequence
 
-    def _heapify(self, sequence: List, index: int, length: int):
+    def _heapify(self, sequence: List, index: int, last_index: int):
         largest: int = 2 * index + 1
-        while largest <= length:
-            if (largest < length) and (sequence[largest] < sequence[largest + 1]):
+        while largest <= last_index:
+            if (largest < last_index) and (sequence[largest] < sequence[largest + 1]):
                 largest += 1
 
             if sequence[largest] > sequence[index]:
@@ -24,12 +24,12 @@ class HeapSort:
                 return
 
     def _sort(self, sequence: List):
-        length: int = len(sequence) - 1
-        least_parent: int = length // 2
+        last_index: int = len(sequence) - 1
+        least_parent: int = last_index // 2
         for i in range(least_parent, -1, -1):
-            self._heapify(sequence, i, length)
+            self._heapify(sequence, i, last_index)
 
-        for i in range(length, 0, -1):
+        for i in range(last_index, 0, -1):
             if sequence[0] > sequence[i]:
                 sequence[i], sequence[0] = sequence[0], sequence[i]
                 self._heapify(sequence, 0, i - 1)
