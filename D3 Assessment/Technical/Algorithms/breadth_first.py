@@ -32,6 +32,5 @@ if __name__ == '__main__':
     g.add_edge(3, 4)
     g.add_edge(6, 8)
 
-    import pdb; pdb.set_trace()
 
     breadth_first(g, 0)
